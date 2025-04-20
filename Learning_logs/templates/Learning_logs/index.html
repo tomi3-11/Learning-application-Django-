@@ -1,0 +1,31 @@
+{% extends 'Learning_logs/base.html' %}
+
+{% block page_header %}
+    <h1>Welcome to the Learning Log</h1>
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-8">
+            <p>Welcome to the Learning Log. This is where you can track your learning progress!</p>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Quick Links</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <a href="{% url 'Learning_logs:topics' %}">View Topics</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="{% url 'users:register' %}">Register</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="{% url 'users:login' %}">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
