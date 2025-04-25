@@ -25,7 +25,7 @@ SECRET_KEY = 'your-dev-key-here'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['learning-application-1388.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
