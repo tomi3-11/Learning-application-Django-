@@ -28,6 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['learning-application-1388.onrender.com', 'localhost', '127.0.0.1']
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -133,3 +134,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_URL = 'users:login'
 LOGIN_REDIRECT_URL = '/'
 
+
+# Trusted CSRF requests from Render
+CSRF_TRUSTED_ORIGINS = ['https://learning-application-1388.onrender.com']
+
+# Required for HTTPS on Render
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
